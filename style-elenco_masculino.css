@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+}
+
+.header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    width: 100%;
+}
+
+p{
+    visibility: visible;
+    color: #000000;
+}
+
+.filtro{
+    display: flex;
+    position: relative;
+    margin: 10px;
+    justify-content: center;
+    
+}
+
+.saibaMais{
+    background-color: #000000;
+    color:#ffffff;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: '4px'; 
+    align-items: center;
+    text-align: center;
+    box-shadow: gray;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.header button {
+    background-color: rgb(58, 80, 58);
+    color: white;
+    border: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.player-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(4, 1fr));
+    gap: 1px;
+    max-width: 1200px;
+    margin: 20px auto; 
+    background-color: gray;
+    text-align: center;
+    justify-content: space-between; 
+    margin-right: 40px;
+    margin-left: 40px;
+    align-items: center;
+}
+
+
+@media (max-width: 1200px) {
+    .player-cards-container {
+        flex-basis: 25%; 
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .player-cards-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+
+@media (min-width: 1025px) {
+    .player-cards-container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+} 
+
+.player-card {
+    width: calc((100% - 3 * 20px) / 4); 
+    margin-bottom: 20px; 
+}
+
+.player-card button {
+    margin-top: 10px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.article {
+    width: 250px;
+    height: 430px;
+    background-color: grey;
+    text-align: center;
+    margin: 10px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: auto auto auto; 
+    
+}
+
+@media (max-width: 768px) {
+    .article {
+        width: 100%; 
+        height: auto; 
+    }
+}

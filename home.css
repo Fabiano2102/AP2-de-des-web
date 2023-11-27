@@ -1,0 +1,86 @@
+.header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header h1 {
+    margin: 10;
+}
+
+.header #voltar {
+    background-color: rgb(58, 80, 58);
+    color: white;
+    border: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.header .filtro {
+    background-color: rgb(58, 80, 58);
+    color: white;
+    border: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .header .filtro a {
+        background-color: rgb(58, 80, 58);
+        color: white;
+        border: 10px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .header .filtro p {
+        background-color: rgb(58, 80, 58);
+        color: white;
+        border: 10px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .header .filtro select {
+        display: inline-block;
+        margin: 0 5px;
+        background-color: rgb(58, 80, 58);
+        color: white;
+        border: 10px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .header .filtro a {
+        display: inline-block;
+        margin: 0 5px;
+        background-color: rgb(58, 80, 58);
+        color: white;
+        border: 10px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .header .filtro p {
+        display: none;
+        background-color: rgb(58, 80, 58);
+        color: white;
+        border: 10px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .header .filtro select {
+        display: none;
+        background-color: rgb(58, 80, 58);
+        color: white;
+        border: 10px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+}
